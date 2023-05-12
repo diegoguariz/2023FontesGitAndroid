@@ -3,6 +3,7 @@ package devandroid.guariz.applistacurso.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.guariz.applistacurso.R;
 import devandroid.guariz.applistacurso.model.Pessoa;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setCursoDesejado("PHP");
         outraPessoa.setTelefoneContato("16 1234585");
 
+/*
         dadosPessoa = "Primeiro Nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
         dadosPessoa +=  " Sobrenome: ";
@@ -52,8 +54,10 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += outraPessoa.getCursoDesejado();
         dadosOutraPessoa += " Telefone: ";
         dadosOutraPessoa += outraPessoa.getTelefoneContato();
+*/
 
-        int parada = 0;
+        Log.i("POOAndroid", "Objeto pessoa: "+pessoa.toString());
+        Log.i("POOAndroid", "Objeto outra pessoa: "+outraPessoa.toString());
 
     }
 }
