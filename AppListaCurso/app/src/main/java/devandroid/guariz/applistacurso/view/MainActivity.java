@@ -34,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
         pessoa = new Pessoa();
         outraPessoa = new Pessoa();
 
+        String dadosPessoa;
+        String dadosOutraPessoa;
+
+        // Atribuir conteúdo, dados, valores pra o objeto.
+        // Conforme o MODELO, Template
+        //pessoa.setPrimeiroNome("Diego");
+        //pessoa.setSobreNome("Guariz");
+        //pessoa.setCursoDesejado("Android");
+        //pessoa.setTelefoneContato("16 997127092");
+
         outraPessoa.setPrimeiroNome("Luiz");
         outraPessoa.setSobreNome("Silva");
         outraPessoa.setCursoDesejado("PHP");
@@ -81,12 +91,32 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(editNomeCurso.getText().toString());
                 pessoa.setTelefoneContato(editTelefoneContato.getText().toString());
 
-                Toast.makeText(MainActivity.this, "Salvo" + pessoa.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Salvo"+pessoa.toString(), Toast.LENGTH_LONG).show();
             }
         });
 
-        Log.i("POOAndroid", "Objeto pessoa: " + pessoa.toString());
-        Log.i("POOAndroid", "Objeto outra pessoa: " + outraPessoa.toString());
+/*
+        dadosPessoa = "Primeiro Nome: ";
+        dadosPessoa += pessoa.getPrimeiroNome();
+        dadosPessoa +=  " Sobrenome: ";
+        dadosPessoa += pessoa.getSobreNome();
+        dadosPessoa += " Curso Desejado: ";
+        dadosPessoa += pessoa.getCursoDesejado();
+        dadosPessoa += " Telefone: ";
+        dadosPessoa += pessoa.getTelefoneContato();
+
+        dadosOutraPessoa = "Primeiro Nome: ";
+        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
+        dadosOutraPessoa +=  " Sobrenome: ";
+        dadosOutraPessoa += outraPessoa.getSobreNome();
+        dadosOutraPessoa += " Curso Desejado: ";
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
+        dadosOutraPessoa += " Telefone: ";
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();
+*/
+
+        Log.i("POOAndroid", "Objeto pessoa: "+pessoa.toString());
+        Log.i("POOAndroid", "Objeto outra pessoa: "+outraPessoa.toString());
 
     }
 }
