@@ -4,7 +4,8 @@ public class Curso {
 
     private String nomeDoCursoDesejado;
 
-    public Curso(String java) {
+    public Curso(String nomeDoCursoDesejado) {
+
         this.nomeDoCursoDesejado = nomeDoCursoDesejado;
     }
 
