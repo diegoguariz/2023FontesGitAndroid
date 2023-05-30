@@ -5,12 +5,22 @@ public class Pessoa {
     // Construtor da Classe
 
     // Atributos
+    private int id;
     private String primeiroNome;
     private String sobreNome;
     private String cursoDesejado;
     private String telefoneContato;
 
     // Métodos de acesso - Getters and Setters
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getPrimeiroNome() {
         return primeiroNome;
